@@ -1,10 +1,10 @@
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
 function Hero() {
 	return (
-		<section className="relative min-h-screen ">
+		<section className="relative min-h-screen py-10">
 			<div className="absolute inset-0">
 				<Image
 					width={200}

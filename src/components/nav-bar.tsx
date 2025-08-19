@@ -3,7 +3,7 @@ import Link from 'next/link'
 function NavBar() {
 	return (
 		<header className="fixed z-50 top-0 left-0 right-0  bg-white/90 ">
-			<div className="flex py-3 container xl:max-w-[89rem]  mx-auto px-8 justify-between items-center">
+			<div className="flex py-3 container xl:max-w-[89rem]  mx-auto px-6 justify-between items-center">
 				<div>
 					<Link
 						className="text-2xl font-semibold text-emerald-700"
