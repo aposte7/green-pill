@@ -32,7 +32,7 @@ function NavBar() {
 					<button className="bg-muted text-muted-foreground px-5 py-1.5 font-medium rounded-sm">
 						<Link href="/">Contact</Link>
 					</button>
-					<button className="bg-gradient-primary text-primary-foreground px-5 py-1.5 font-medium rounded-sm">
+					<button className="bg-primary text-primary-foreground px-4 py-[7px] text-sm font-medium rounded-sm">
 						<Link href="/">Join Programs</Link>
 					</button>
 				</div>
