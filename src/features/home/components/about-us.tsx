@@ -85,9 +85,9 @@ function AboutUs() {
 						<p className="text-muted-foreground leading-relaxed">
 							From the early innovators who gave us fire and the
 							wheel, to modern engineers driving the Industrial
-							Revolution, to today's tech pioneers - evolution has
-							always been key to solving humanity's greatest
-							challenges.
+							Revolution, to today&apos;s tech pioneers -
+							evolution has always been key to solving
+							humanity&apos;s greatest challenges.
 						</p>
 					</div>
 					<div className="space-y-6">
@@ -135,7 +135,7 @@ function AboutUs() {
 								</h4>
 								<p className="text-muted-foreground">
 									Continuously grow your skills to meet
-									tomorrow's challenges.
+									tomorrow&apos;s challenges.
 								</p>
 							</div>
 						</div>
