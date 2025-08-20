@@ -22,7 +22,7 @@ function Evolution() {
 
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ">
 				<div className="bg-primary/10  space-y-5 text-center rounded-xl p-8">
-					<div className="rounded-lg h-60 overflow-hidden">
+					<div className="rounded-lg h-64 overflow-hidden">
 						<Image
 							className="w-full object-cover h-full"
 							src="/evolution.jpg"
