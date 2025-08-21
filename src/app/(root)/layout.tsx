@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import NavBar from '@/components/nav-bar'
 
 function layout({
@@ -9,6 +10,7 @@ function layout({
 		<>
 			<NavBar />
 			{children}
+			<Footer />
 		</>
 	)
 }
