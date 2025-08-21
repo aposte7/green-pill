@@ -2,7 +2,10 @@ import { Lightbulb, Target, TrendingUp, Users } from 'lucide-react'
 
 function AboutUs() {
 	return (
-		<section className="bg-secondary space-y-16 px-8 py-25 text-secondary-foreground ">
+		<section
+			id="about"
+			className="bg-secondary space-y-16 px-8 py-25 text-secondary-foreground "
+		>
 			<div>
 				<h2 className="mx-auto mb-6 font-bold w-fit text-4xl">
 					About Green Pill

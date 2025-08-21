@@ -1,3 +1,4 @@
+import JoinUS from '@/components/join-us'
 import { ArrowRight, Camera } from 'lucide-react'
 import Image from 'next/image'
 
@@ -295,6 +296,8 @@ function page() {
 					</div>
 				</div>
 			</section>
+
+			<JoinUS />
 		</>
 	)
 }

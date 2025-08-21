@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 
-/* ✅ Base CSS vars (your design tokens) */
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--background: 0 0% 100%;
 	--foreground: 215 27% 17%;
