@@ -260,11 +260,19 @@ html {
 }
 
 .column-reverse {
-	transform: translateY(calc(-100% + 100vh));
-	flex-direction: column-reverse;
-	animation: adjust-position linear forwards;
-	animation-timeline: --training-grid;
-	animation-range: 0% 100%;
+	flex-direction: column;
+	transform: none;
+	animation: none;
+}
+
+@media (min-width: 640px) {
+	.column-reverse {
+		flex-direction: column-reverse;
+		transform: translateY(calc(-100% + 100vh));
+		animation: adjust-position linear forwards;
+		animation-timeline: --training-grid;
+		animation-range: 0% 100%;
+	}
 }
 
 @supports (animation-timeline: scroll()) {

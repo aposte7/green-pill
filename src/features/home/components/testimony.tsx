@@ -3,7 +3,7 @@ import React from 'react'
 const delay = Number((60 / 6).toFixed(0))
 function Testimony() {
 	return (
-		<section className="py-25  px-8 bg-background">
+		<section className="py-20  px-8 bg-background">
 			<div className="max-w-xl mx-auto mb-5 text-center">
 				<h3 className="text-5xl font-bold mb-5">Success Stories</h3>
 				<p className="text-muted-foreground text-lg">

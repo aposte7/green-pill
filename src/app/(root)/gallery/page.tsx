@@ -56,7 +56,7 @@ function page() {
 				</div>
 			</section>
 
-			<section className="py-25 text-center bg-secondary">
+			<section className="py-20 text-center bg-secondary">
 				<h2 className="text-5xl mb-7 font-bold">
 					Our Training Journey
 				</h2>
@@ -68,230 +68,67 @@ function page() {
 
 				<div
 					id="training-grid"
-					className="h-screen mt-20 overflow-y-scroll"
+					className="mt-20 h-screen overflow-y-scroll"
 				>
-					<div className="grid h-[200rem] overflow-y-clip lg:max-w-7xl mx-auto  grid-cols-3 ">
-						<div className="flex column-reverse flex-col ">
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-4.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 4
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-2.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 2
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-6.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 6
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-1.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 1
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-5.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 5
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-3.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 3
-								</figcaption>
-							</figure>
+					<div className="mx-auto grid h-[200rem] max-w-7xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 overflow-y-clip gap-y-8">
+						<div className="flex flex-col column-reverse">
+							{['4', '2', '6', '1', '5', '3'].map((num) => (
+								<figure
+									key={num}
+									className="w-full  h-[32rem] px-4 sm:px-6 lg:px-[7vh] rounded-xl overflow-clip"
+								>
+									<Image
+										src={`/img/green-${num}.jpg`}
+										width={400}
+										height={400}
+										alt={`Green Pill Training Session ${num}`}
+										className="h-[90%] w-full rounded-xl object-cover object-top"
+									/>
+									<figcaption className="mt-2 text-center text-sm text-muted-foreground">
+										Green Pill Training Session {num}
+									</figcaption>
+								</figure>
+							))}
 						</div>
-						<div className="flex flex-col ">
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-3.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 3
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-5.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 5
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-1.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 1
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-6.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 6
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-2.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 2
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-4.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 4
-								</figcaption>
-							</figure>
+
+						<div className="flex flex-col">
+							{['3', '5', '1', '6', '2', '4'].map((num) => (
+								<figure
+									key={num}
+									className="w-full  h-[32rem] px-4 sm:px-6 lg:px-[7vh] rounded-xl overflow-clip"
+								>
+									<Image
+										src={`/img/green-${num}.jpg`}
+										width={400}
+										height={400}
+										alt={`Green Pill Training Session ${num}`}
+										className="h-[90%] w-full rounded-xl object-cover object-top"
+									/>
+									<figcaption className="mt-2 text-center text-sm text-muted-foreground">
+										Green Pill Training Session {num}
+									</figcaption>
+								</figure>
+							))}
 						</div>
-						<div className="flex column-reverse flex-col ">
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-5.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 5
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-1.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 1
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-6.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 6
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-2.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 2
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-3.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 3
-								</figcaption>
-							</figure>
-							<figure className="h-[32rem] px-[7vh] rounded-xl overflow-clip  w-full">
-								<Image
-									src="/img/green-4.jpg"
-									width={400}
-									height={400}
-									alt="session image"
-									className="w-full h-[90%] rounded-xl object-top-left object-cover"
-								/>
-								<figcaption className="text-center mt-2 text-sm text-muted-foreground">
-									Green Pill Training Session 4
-								</figcaption>
-							</figure>
+
+						<div className="flex flex-col column-reverse">
+							{['5', '1', '6', '2', '3', '4'].map((num) => (
+								<figure
+									key={num}
+									className="w-full  h-[32rem] px-4 sm:px-6 lg:px-[7vh] rounded-xl overflow-clip"
+								>
+									<Image
+										src={`/img/green-${num}.jpg`}
+										width={400}
+										height={400}
+										alt={`Green Pill Training Session ${num}`}
+										className="h-[90%] w-full rounded-xl object-cover object-top"
+									/>
+									<figcaption className="mt-2 text-center text-sm text-muted-foreground">
+										Green Pill Training Session {num}
+									</figcaption>
+								</figure>
+							))}
 						</div>
 					</div>
 				</div>

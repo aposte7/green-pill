@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Evolution() {
 	return (
-		<section className="py-25 px-8">
+		<section className="py-20 px-8">
 			<div className="text-center mb-20 space-y-6 max-w-5xl m-auto w-full">
 				<h3 className="text-4xl font-bold">
 					Why{' '}

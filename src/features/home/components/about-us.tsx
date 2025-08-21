@@ -4,7 +4,7 @@ function AboutUs() {
 	return (
 		<section
 			id="about"
-			className="bg-secondary space-y-16 px-8 py-25 text-secondary-foreground "
+			className="bg-secondary space-y-16 px-8 py-20 text-secondary-foreground "
 		>
 			<div>
 				<h2 className="mx-auto mb-6 font-bold w-fit text-4xl">

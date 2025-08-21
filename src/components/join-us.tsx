@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function JoinUS() {
 	return (
-		<section className="px-8 bg-secondary text-center text-white py-25 rounded-md ">
+		<section className="px-8 bg-secondary text-center text-white py-20 rounded-md ">
 			<div className="px-6 max-w-5xl w-full mx-auto space-y-6 rounded-xl text-center pt-10 pb-8 bg-gradient-primary">
 				<h3 className="text-3xl sm:text-4xl font-bold">
 					Ready to Start Your Journey?
