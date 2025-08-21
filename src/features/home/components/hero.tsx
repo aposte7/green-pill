@@ -16,7 +16,7 @@ function Hero() {
 				<div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-transparent"></div>
 			</div>
 
-			<div className="relative z-10 container xl:max-w-[89rem]  mx-auto xl:px-6 px-4 py-20">
+			<div className="relative z-10 container xl:max-w-[80rem]  mx-auto xl:px-6 px-4 py-20">
 				<div className="max-w-3xl">
 					<div className="animate-fade-in-up">
 						<h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-[1.28]">

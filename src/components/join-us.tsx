@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 function JoinUS() {
 	return (
 		<section className="px-8 bg-secondary text-center text-white py-25 rounded-md ">
@@ -12,17 +14,21 @@ function JoinUS() {
 				</p>
 
 				<div className="flex justify-center items-center gap-4">
-					<button
+					<Link
+						href="/program"
 						className="border-border/30 border px-5 py-2 bg-white/20 rounded-md 
 					hover:bg-white/50
 					"
 					>
 						Apply for Next Cohort
-					</button>
+					</Link>
 
-					<button className="border-border px-5 py-2 bg-white hover:bg-white/80 text-primary rounded-md ">
+					<Link
+						href="/#about"
+						className="border-border px-5 py-2 bg-white hover:bg-white/80 text-primary rounded-md "
+					>
 						Learn More
-					</button>
+					</Link>
 				</div>
 			</div>
 		</section>

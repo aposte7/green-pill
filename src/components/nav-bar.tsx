@@ -17,7 +17,7 @@ function NavBar() {
 
 	return (
 		<header className="sticky top-0 left-0 right-0 z-50 border-b border-border bg-secondary/95">
-			<div className="container xl:max-w-[89rem] mx-auto flex items-center justify-between px-6 py-3">
+			<div className="container xl:max-w-[80rem] mx-auto flex items-center justify-between px-6 py-3">
 				{/* Logo */}
 				<div>
 					<Link
