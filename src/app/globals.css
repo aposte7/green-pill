@@ -185,6 +185,7 @@
 	color: var(--foreground);
 	font-family: Arial, Helvetica, sans-serif;
 } */
+
 @keyframes accordion-down {
 	from {
 		height: 0;
@@ -244,4 +245,34 @@
 
 .stop:hover > * {
 	animation-play-state: paused;
+}
+
+#training-grid {
+	scroll-timeline: --training-grid block;
+}
+
+#training-grid::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+.column-reverse {
+	transform: translateY(calc(-100% + 100vh));
+	flex-direction: column-reverse;
+	animation: adjust-position linear forwards;
+	animation-timeline: --training-grid;
+	animation-range: 0% 100%;
+}
+
+@supports (animation-timeline: scroll()) {
+	@keyframes adjust-position {
+		from {
+			/* show bottom-most item first */
+			transform: translateY(calc(-100% + 100vh));
+		}
+		to {
+			/* show top-most item last */
+			transform: translateY(calc(100% - 100vh));
+		}
+	}
 }

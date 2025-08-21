@@ -8,13 +8,12 @@ import Testimony from '@/features/home/components/testimony'
 function page() {
 	return (
 		<>
-			<NavBar />
 			<main>
 				<Hero />
 				<AboutUs />
-				<Testimony />
 				<JoinUS />
 				<Evolution />
+				<Testimony />
 			</main>
 		</>
 	)

@@ -1,9 +1,16 @@
+import NavBar from '@/components/nav-bar'
+
 function layout({
 	children,
 }: Readonly<{
 	children: React.ReactNode
 }>) {
-	return <div>{children}</div>
+	return (
+		<>
+			<NavBar />
+			{children}
+		</>
+	)
 }
 
 export default layout
