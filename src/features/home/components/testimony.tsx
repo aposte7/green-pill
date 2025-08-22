@@ -1,6 +1,59 @@
 import React from 'react'
 
-const delay = Number((60 / 6).toFixed(0))
+type Testimonial = {
+	name: string
+	role: string
+	quote: string
+}
+
+const testimonials: Testimonial[] = [
+	{
+		name: 'Meron Bekele',
+		role: 'Software Engineer · Addis Ababa',
+		quote:
+			'Green Pill turned fuzzy problems into testable hypotheses. Our team now gets to root causes fast and ships solutions that actually move the metrics.',
+	},
+	{
+		name: 'Abel Tadesse',
+		role: 'Product Designer · Fintech',
+		quote:
+			'Design thinking with real Ethiopian users changed everything. Field interviews in Addis helped us simplify onboarding and cut drop‑offs by half.',
+	},
+	{
+		name: 'Hanna Gebremedhin',
+		role: 'Operations Lead · EdTech',
+		quote:
+			'The 5 Whys + prioritization matrix helped us fix bottlenecks with limited resources. We reduced response time from days to hours.',
+	},
+	{
+		name: 'Yohannes Tesfaye',
+		role: 'Founder · Agritech, Bahir Dar',
+		quote:
+			'We validated our idea with smallholder farmers before building. The training saved months of guesswork and focused us on real needs.',
+	},
+	{
+		name: 'Lulit Alemu',
+		role: 'CS Student · AAU',
+		quote:
+			'I built a portfolio with real projects and practical frameworks. The mentorship made me internship‑ready in one semester.',
+	},
+	{
+		name: 'Dawit Mekonnen',
+		role: 'Program Manager · NGO',
+		quote:
+			'Outcome mapping and simple dashboards helped our team track impact clearly. Stakeholders finally see progress at a glance.',
+	},
+]
+
+const getInitials = (name: string) =>
+	name
+		.split(' ')
+		.filter(Boolean)
+		.slice(0, 2)
+		.map((n) => n[0]?.toUpperCase())
+		.join('')
+
+const delay = Number((60 / testimonials.length).toFixed(0))
 function Testimony() {
 	return (
 		<section className="py-20  px-8 bg-background">
@@ -13,39 +66,30 @@ function Testimony() {
 			</div>
 
 			<div className="w-full stop overflow-hidden relative mt-15 h-[20rem]">
-				<div className="h-0 stop">
-					{Array.from({ length: 6 }, (_, i) => (
-						<div
-							style={{
-								animationDelay: `-${delay * i + 1}s`,
-							}}
-							key={i}
-							className="absolute left-0 cursor-pointer group-hover:animation-play-state-paused py-6 px-8 rounded-xl bg-secondary border border-border w-[30rem] animate-testimony flex-col flex gap-6"
-						>
-							<div className="flex items-center gap-4">
-								<span className="h-16 flex items-center justify-center text-2xl w-16 rounded-full bg-gradient-primary text-primary-foreground">
-									SC
-								</span>
+							<div className="h-0 stop">
+								{testimonials.map((t, i) => (
+									<div
+										style={{ animationDelay: `-${delay * i + 1}s` }}
+										key={`${t.name}-${i}`}
+										className="absolute left-0 cursor-pointer group-hover:animation-play-state-paused py-6 px-8 rounded-xl bg-secondary border border-border w-[30rem] animate-testimony flex-col flex gap-6"
+									>
+										<div className="flex items-center gap-4">
+											<span className="h-16 flex items-center justify-center text-2xl w-16 rounded-full bg-gradient-primary text-primary-foreground">
+												{getInitials(t.name)}
+											</span>
 
-								<div>
-									<p className="font-medium text-lg">
-										Sarah Chen
-									</p>
-									<p className="text-muted-foreground">
-										Startup Founder
-									</p>
-								</div>
+											<div>
+												<p className="font-medium text-lg">{t.name}</p>
+												<p className="text-muted-foreground">{t.role}</p>
+											</div>
+										</div>
+
+										<p className="italic text-muted-foreground text-lg">
+											&quot;{t.quote}&quot;
+										</p>
+									</div>
+								))}
 							</div>
-
-							<p className="italic text-muted-foreground text-lg">
-								&quot;The 5 Whys methodology completely
-								transformed how I approach complex problems. I
-								can now identify root causes much faster and
-								create more effective solutions&quot;
-							</p>
-						</div>
-					))}
-				</div>
 			</div>
 		</section>
 	)

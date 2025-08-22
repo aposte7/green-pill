@@ -16,8 +16,8 @@ function JoinUS() {
 				<div className="flex justify-center items-center gap-4">
 					<Link
 						href="/program"
-						className="border-border/30 border px-5 py-2 bg-white/20 rounded-md 
-					hover:bg-white/50
+						className="border-border/20 duration-200 border px-5 py-2 bg-white/20 rounded-md 
+					hover:bg-white/40
 					"
 					>
 						Apply for Next Cohort
@@ -25,7 +25,7 @@ function JoinUS() {
 
 					<Link
 						href="/#about"
-						className="border-border px-5 py-2 bg-white hover:bg-white/80 text-primary rounded-md "
+						className="border-border px-5 py-2 duration-200 bg-white hover:bg-white/80 text-primary rounded-md "
 					>
 						Learn More
 					</Link>

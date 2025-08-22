@@ -98,7 +98,7 @@ function Evolution() {
 							</span>
 						</p>
 
-						<button className="border-border/30 w-full justify-center items-center rounded-md inline-flex gap-3 bg-white/20 border py-2.5 px-5">
+						<button className="border-border/30 cursor-pointer w-full justify-center items-center rounded-md duration-200 hover:bg-white/40 inline-flex gap-3 bg-white/20 border py-2.5 px-5">
 							Start Your Evolution Journey{' '}
 							<ArrowRight size={18} />
 						</button>
