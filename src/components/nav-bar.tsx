@@ -1,5 +1,6 @@
 'use client'
 
+import BlogNavLink from '@/blog_system/blog/BlogNavLink'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -11,7 +12,6 @@ function NavBar() {
 		{ href: '/', label: 'Home' },
 		{ href: '/#about', label: 'About' },
 		{ href: '/gallery', label: 'Gallery' },
-		{ href: '/blogs', label: 'Blogs' },
 		{ href: '/programs', label: 'Programs' },
 	]
 
@@ -45,6 +45,9 @@ function NavBar() {
 								</Link>
 							</li>
 						))}
+						<li>
+							<BlogNavLink />
+						</li>
 					</ul>
 
 					<Link
@@ -85,6 +88,10 @@ function NavBar() {
 											</Link>
 										</li>
 									))}
+
+									<li>
+										<BlogNavLink />
+									</li>
 								</ul>
 							</div>
 						</details>
