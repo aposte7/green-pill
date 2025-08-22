@@ -20,7 +20,7 @@ function AboutUs() {
 			</div>
 
 			<div className="grid  min-[70rem]:grid-cols-4  gap-6 sm:grid-cols-2 ">
-				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg">
+				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-elegant hover:border-primary/40">
 					<div className="flex p-3.5 w-fit justify-center items-center rounded-full bg-gradient-primary text-primary-foreground">
 						<Target size={30} />
 					</div>
@@ -32,7 +32,7 @@ function AboutUs() {
 						problems. Every challenge is an opportunity for growth.
 					</p>
 				</div>
-				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg">
+				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-elegant hover:border-primary/40">
 					<div className="flex p-3.5 w-fit justify-center items-center rounded-full bg-gradient-primary text-primary-foreground">
 						<Users size={30} />
 					</div>
@@ -44,7 +44,7 @@ function AboutUs() {
 						builders, thinkers, and connectors working in harmony.
 					</p>
 				</div>
-				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg">
+				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-elegant hover:border-primary/40">
 					<div className="flex p-3.5 w-fit justify-center items-center rounded-full bg-gradient-primary text-primary-foreground">
 						<Lightbulb size={30} />
 					</div>
@@ -56,7 +56,7 @@ function AboutUs() {
 						mapping to tackle complex challenges.
 					</p>
 				</div>
-				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg">
+				<div className="bg-card text-card-foreground gap-3 p-6 border flex flex-col items-center border-border rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-elegant hover:border-primary/40">
 					<div className="flex p-3.5 w-fit justify-center items-center rounded-full bg-gradient-primary text-primary-foreground">
 						<TrendingUp size={30} />
 					</div>

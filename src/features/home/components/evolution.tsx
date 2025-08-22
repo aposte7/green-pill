@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Evolution() {
 	return (
@@ -14,9 +15,9 @@ function Evolution() {
 				</h3>
 
 				<p className="sm:text-sm md:text-xl text-muted-foreground">
-					Have you ever felt like you've stopped growing your skills?
-					Technology and society evolve, and as a problem-solver, you
-					need to evolve too.
+					Have you ever felt like you&apos;ve stopped growing your
+					skills? Technology and society evolve, and as a
+					problem-solver, you need to evolve too.
 				</p>
 			</div>
 
@@ -98,10 +99,13 @@ function Evolution() {
 							</span>
 						</p>
 
-						<button className="border-border/30 cursor-pointer w-full justify-center items-center rounded-md duration-200 hover:bg-white/40 inline-flex gap-3 bg-white/20 border py-2.5 px-5">
+						<Link
+							href="/programs"
+							className="border-border/30 cursor-pointer w-full justify-center items-center rounded-md duration-200 hover:bg-white/40 inline-flex gap-3 bg-white/20 border py-2.5 px-5"
+						>
 							Start Your Evolution Journey{' '}
 							<ArrowRight size={18} />
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

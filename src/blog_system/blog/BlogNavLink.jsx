@@ -1,13 +1,16 @@
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 
-function BlogNavLink() {
+function BlogNavLink({ className }) {
 	return (
 		<div className="group relative">
-			<div className="flex cursor-pointer items-center gap-1 transition-colors duration-200 hover:text-primary">
+			<Link
+				href="/blog"
+				className={`flex text-sm cursor-pointer items-center gap-1 transition-colors duration-200 hover:text-primary ${className}`}
+			>
 				Blog
 				<ChevronDown size={16} />
-			</div>
+			</Link>
 
 			<div className="invisible absolute -top-full left-20 z-50 mt-2 w-64 rounded-md border border-border bg-background p-4 opacity-0 shadow-lg transition-all duration-300 ease-in-out group-hover:visible group-hover:opacity-100 sm:top-full sm:left-0">
 				<input

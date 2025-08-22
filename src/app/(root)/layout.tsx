@@ -1,5 +1,6 @@
 import Footer from '@/components/footer'
 import NavBar from '@/components/nav-bar'
+import { Toaster } from 'sonner'
 
 function layout({
 	children,
@@ -11,6 +12,7 @@ function layout({
 			<NavBar />
 			{children}
 			<Footer />
+			<Toaster position="top-right" richColors />
 		</>
 	)
 }

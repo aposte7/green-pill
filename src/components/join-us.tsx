@@ -15,7 +15,7 @@ function JoinUS() {
 
 				<div className="flex justify-center items-center gap-4">
 					<Link
-						href="/program"
+						href="/programs"
 						className="border-border/20 duration-200 border px-5 py-2 bg-white/20 rounded-md 
 					hover:bg-white/40
 					"

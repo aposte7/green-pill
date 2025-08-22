@@ -17,8 +17,7 @@ function NavBar() {
 
 	return (
 		<header className="sticky top-0 left-0 right-0 z-50 border-b border-border bg-secondary/95">
-			<div className="container xl:max-w-[80rem] mx-auto flex items-center justify-between px-6 py-3">
-				{/* Logo */}
+			<div className="container xl:max-w-[85rem] mx-auto flex items-center justify-between px-6 py-3">
 				<div>
 					<Link
 						className="text-2xl font-semibold text-emerald-700 hover:text-emerald-800 transition-colors"
@@ -27,10 +26,8 @@ function NavBar() {
 						Green Pill
 					</Link>
 				</div>
-
-				{/* Desktop Menu */}
 				<div className="flex items-center gap-4 md:gap-6">
-					<ul className="inline-flex gap-6 justify-between max-lg:hidden">
+					<ul className="inline-flex items-center gap-6 justify-between max-lg:hidden">
 						{navItems.map(({ href, label }) => (
 							<li key={href}>
 								<Link
@@ -46,12 +43,18 @@ function NavBar() {
 							</li>
 						))}
 						<li>
-							<BlogNavLink />
+							<BlogNavLink
+								className={` ${
+									pathname === '/blog'
+										? 'text-emerald-700 font-semibold border-b-2 border-emerald-700 pb-1 hover:text-emerald-800'
+										: 'text-gray-600 hover:text-emerald-700'
+								}`}
+							/>
 						</li>
 					</ul>
 
 					<Link
-						href="/contact"
+						href="/#contact"
 						className="bg-muted border-primary/20 border hover:bg-white/90 text-muted-foreground px-3 md:px-5 text-sm py-1.5 font-medium rounded-sm inline-block transition-colors"
 					>
 						Contact
