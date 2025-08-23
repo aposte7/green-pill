@@ -59,13 +59,13 @@ function Testimony() {
 				</p>
 			</div>
 
-			<div className="w-full stop overflow-hidden relative mt-15 h-[20rem]">
+			<div className="w-full overflow-hidden relative mt-15 h-[20rem]">
 				<div className="h-0 stop">
 					{testimonials.map((t, i) => (
 						<div
 							style={{ animationDelay: `-${delay * i + 1}s` }}
 							key={`${t.name}-${i}`}
-							className="absolute left-0 cursor-pointer py-6 px-8 rounded-xl bg-secondary border border-border w-[30rem] animate-testimony flex-col flex gap-6 transition-all duration-300 hover:[animation-play-state:paused] hover:shadow-elegant hover:border-primary/40 hover:bg-secondary/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
+							className="absolute left-0 cursor-pointer py-6 px-8 rounded-xl bg-secondary border border-border w-[30rem] animate-testimony flex-col flex gap-6 transition-all duration-300 hover:shadow-elegant hover:border-primary/40 hover:bg-secondary/95 focus-visible:ring-2 focus-visible:ring-primary/30"
 						>
 							<div className="flex items-center gap-4">
 								<span className="h-16 flex items-center justify-center text-2xl w-16 rounded-full bg-gradient-primary text-primary-foreground">
