@@ -9,6 +9,7 @@ function Hero() {
 				<Image
 					width={200}
 					height={200}
+					priority={true}
 					src="/hero.jpg"
 					alt="Professional collaboration and growth"
 					className="w-full h-full object-cover"
