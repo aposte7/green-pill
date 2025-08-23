@@ -1,7 +1,7 @@
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 
-function BlogNavLink({ className }) {
+function BlogNavLink({ className = '' }) {
 	return (
 		<div className="group relative">
 			<Link

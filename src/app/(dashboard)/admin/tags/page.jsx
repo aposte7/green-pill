@@ -1,4 +1,4 @@
-import Tags from '@/blog_system/Tags/Tags'
+import Tags from '@/blog_system/tags/Tags'
 
 function Page() {
 	return <Tags />
