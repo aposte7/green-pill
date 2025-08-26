@@ -12,8 +12,8 @@ const Home = () => {
 	const { totalViews, isLoading: loadingViews } = useTotalViews()
 
 	return (
-		<section className="space-y-8  p-6">
-			<div className="relative overflow-hidden rounded-lg bg-gradient-to-r bg-blog-gradient px-8 py-10">
+		<section className="space-y-8 p-6">
+			<div className="relative overflow-hidden rounded-lg px-8 py-10 bg-gradient-to-r from-green-500 via-teal-400 to-blue-500">
 				<h1 className="mb-3 text-3xl font-semibold text-white">
 					Welcome to Admin Dashboard
 				</h1>

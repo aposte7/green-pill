@@ -64,16 +64,7 @@ const Sidebar = () => {
 					/>
 					Posts
 				</Link>
-				<Link
-					href="/admin/comments"
-					className={linkClasses('/admin/comments')}
-				>
-					<MessageCircleIcon
-						size="1.3em"
-						className="rounded-md text-inherit"
-					/>
-					Comments
-				</Link>
+
 				<Link
 					href="/admin/categories"
 					className={linkClasses('/admin/categories')}
@@ -84,6 +75,17 @@ const Sidebar = () => {
 				<Link href="/admin/tags" className={linkClasses('/admin/tags')}>
 					<Tag size="1.3em" className="rounded-md text-inherit" />
 					Tags
+				</Link>
+
+				<Link
+					href="/admin/comments"
+					className={linkClasses('/admin/comments')}
+				>
+					<MessageCircleIcon
+						size="1.3em"
+						className="rounded-md text-inherit"
+					/>
+					Comments
 				</Link>
 			</div>
 
