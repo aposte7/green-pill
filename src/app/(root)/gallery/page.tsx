@@ -5,7 +5,7 @@ import Image from 'next/image'
 function page() {
 	return (
 		<>
-			<section>
+			<section className="h-fit">
 				<div className="bg-gradient-primary space-y-6  py-10 text-center text-primary-foreground h-2/3">
 					<span className="h-16 mx-auto bg-secondary/30 w-16 flex items-center justify-center rounded-full">
 						<Camera size={35} />
