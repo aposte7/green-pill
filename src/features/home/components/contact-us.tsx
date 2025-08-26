@@ -33,7 +33,7 @@ const ContactUs = () => {
 	return (
 		<section
 			id="contact"
-			className="py-20 px-10 bg-gradient-to-r from-muted to-white"
+			className="py-20 px-4 md:px-8 lg:px-10 bg-gradient-to-r from-muted to-white"
 		>
 			<div className="container mx-auto px-4">
 				<div className="text-center text-foreground mb-16">
