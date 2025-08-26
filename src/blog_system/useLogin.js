@@ -7,7 +7,11 @@ export function useLogin() {
 	const router = useRouter()
 	const queryClient = useQueryClient()
 
-	const { mutate: loginApi, isLoading } = useMutation({
+	const {
+		mutate: loginApi,
+		isLoading,
+		error,
+	} = useMutation({
 		mutationFn: (data) => login(data),
 		onSuccess: (data) => {
 			queryClient.setQueriesData(['user'], data.user)
@@ -18,5 +22,5 @@ export function useLogin() {
 		},
 	})
 
-	return { loginApi, isLoading }
+	return { loginApi, isLoading, error }
 }
