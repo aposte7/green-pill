@@ -74,7 +74,7 @@ const Page = () => {
 							<h3 className="mb-4 text-3xl font-bold text-foreground">
 								{program.title}
 							</h3>
-							<div className="flex justify-center space-x-8 text-muted-foreground">
+							<div className="flex flex-wrap justify-center gap-4 md:gap-4 text-muted-foreground">
 								<div className="flex items-center space-x-2">
 									<Clock className="h-5 w-5" />
 									<span className="font-medium">

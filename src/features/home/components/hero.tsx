@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -36,14 +37,15 @@ function Hero() {
 						</p>
 
 						<div className="flex flex-col sm:flex-row gap-4 mb-12">
-							<button
+							<Link
+								href="/programs"
 								className="group bg-gradient-primary py-3 px-6 rounded-sm inline-flex text-lg text-primary-foreground hover:scale-105 transition-transform 
                             duration-300
                             items-center "
 							>
 								Explore Programs
 								<ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-							</button>
+							</Link>
 						</div>
 
 						<div className="grid grid-cols-2 md:grid-cols-3 gap-8 pt-8 border-t border-white/20">

@@ -68,10 +68,9 @@ function NavBar() {
 						<span className="hidden sm:inline-block">Programs</span>
 					</Link>
 
-					{/* Mobile Menu */}
 					<div className="relative h-9 w-9 lg:hidden">
 						<details className="absolute inset-y-0 rounded-md">
-							<summary className="flex h-9 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-border hover:bg-gray-100 duration-200">
+							<summary className="flex h-9 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-gray-300 hover:bg-gray-100 duration-200">
 								<Menu size={24} strokeWidth={1.25} />
 							</summary>
 

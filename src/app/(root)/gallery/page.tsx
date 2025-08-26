@@ -5,7 +5,7 @@ import Image from 'next/image'
 function page() {
 	return (
 		<>
-			<section className="h-[91.5dvh]">
+			<section>
 				<div className="bg-gradient-primary space-y-6  py-10 text-center text-primary-foreground h-2/3">
 					<span className="h-16 mx-auto bg-secondary/30 w-16 flex items-center justify-center rounded-full">
 						<Camera size={35} />
@@ -28,9 +28,9 @@ function page() {
 					</button>
 				</div>
 
-				<div className="flex items-center py-15 justify-evenly gap-8">
+				<div className="flex flex-wrap items-center py-15 justify-evenly gap-4">
 					<div>
-						<p className="text-3xl mb-2 text-center font-bold">
+						<p className="text-2xl sm:text-3xl mb-2 text-center font-bold">
 							500+
 						</p>
 						<p className="text-muted-foreground">
@@ -38,7 +38,7 @@ function page() {
 						</p>
 					</div>
 					<div>
-						<p className="text-3xl mb-2 text-center font-bold">
+						<p className="text-2xl sm:text-3xl mb-2 text-center font-bold">
 							50+
 						</p>
 						<p className="text-muted-foreground">
@@ -46,11 +46,15 @@ function page() {
 						</p>
 					</div>
 					<div>
-						<p className="text-3xl mb-2 text-center font-bold">3</p>
+						<p className="text-2xl sm:text-3xl mb-2 text-center font-bold">
+							3
+						</p>
 						<p className="text-muted-foreground">Total Cohort</p>
 					</div>
 					<div>
-						<p className="text-3xl mb-2 text-center font-bold">2</p>
+						<p className="text-2xl sm:text-3xl mb-2 text-center font-bold">
+							2
+						</p>
 						<p className="text-muted-foreground">Years Running</p>
 					</div>
 				</div>
